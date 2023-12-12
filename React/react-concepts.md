@@ -273,11 +273,14 @@ It is the process of updating the DOM. It updates the parts where it has changes
 useMemo is a hook that takes a function and a list of dependencies as arguments, and returns a value that is the result of calling the function. The value is stored in a cache and is only re-computed if one of the dependencies has changed. useMemo caches the result of the function.
 
 
-### useCallback
-If we change a state of one component it also updates or re-renders all the other components also.
-Here it will cache the function and return that cached function if nothing is changed. If any dependancy of the function changed then only it will give a new function.
+### useCallback Hook
+In react if we change the state of a component it also re-renders all the other components also.
 
-It accepts two parameters one is a callback function and another one is an array of dependancys. It also works same as the useMemo.
+useCallback will cache the function and return that cached function if nothing is changed. If any dependancy of the function changed then only it will re-render the component.
+
+It accepts two parameters. One is a callback function and a array of dependancys.
+ 
+We have to use this with React.memo()
 
 ### React.Memo
 In react when a parent component is re-rendered it will automatically render the child component unnecessarily. To prevent this we can use React.memo
@@ -319,3 +322,4 @@ Code splitting in React is a technique used to optimize the performance of our a
 
 ## Erro Boundary 
 It is used to catch the error comes when the lazy component is loading. For creating error boundary we can use the npm library "react-error-boundary".
+
