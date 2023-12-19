@@ -93,7 +93,7 @@ Javascript can't understand the HTML document directly. So when the web page loa
 ### Client side rendering
 
 -    It is the process of rendering the web pages on the client side using javascript.
--    Server sends a initial HTML file and cliet then uses javascript to dynamically update the page as needed.
+-    Server sends a initial HTML file and client then uses javascript to dynamically update the page as needed.
 -    Client can update a specific part of the web page without reloading the whole page.
 -    commonly used for web applications that require high amount of user interactivity
 
