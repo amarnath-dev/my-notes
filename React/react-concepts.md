@@ -323,3 +323,8 @@ Code splitting in React is a technique used to optimize the performance of our a
 ## Erro Boundary 
 It is used to catch the error comes when the lazy component is loading. For creating error boundary we can use the npm library "react-error-boundary".
 
+# REDUX
+Redux is an open-source JavaScript library used to manage application state. React uses Redux for building the user interface. It was first introduced by Dan Abramov and Andrew Clark in 2015.
+
+React Redux is the official React binding for Redux. It allows React components to read data from a Redux Store, and dispatch Actions to the Store to update data. Redux helps apps to scale by providing a sensible way to manage state through a unidirectional data flow model. React Redux is conceptually simple. It subscribes to the Redux store, checks to see if the data which your component wants have changed, and re-renders your component.
+
