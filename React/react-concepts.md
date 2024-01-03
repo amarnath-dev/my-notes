@@ -331,3 +331,12 @@ React Redux is the official React binding for Redux. It allows React components 
 # Ecosystem
 
 Redux is a tiny library, but its contracts and APIs are carefully chosen to spawn an ecosystem of tools and extensions, and the community has created a wide variety of helpful addons, libraries, and tools. You don't need to use any of these addons to use Redux, but they can help make it easier to implement features and solve problems in your application.
+
+# Reducers in Redux
+
+Reducers are a pure function in Redux. Pure functions are predictable. Reducers are the only way to change states in Redux. It is the only place where you can write logic and calculations. Reducer function will accept the previous state of app and action being dispatched, calculate the next state and returns the new object.
+
+## The following few things should never be performed inside the reducer −
+- Mutation of functions arguments
+- API calls & routing logic
+- Calling non-pure function e.g. Math.random()
